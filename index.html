@@ -4,13 +4,14 @@
 		<meta charset="utf-8">
 		<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
 
-		<title>reveal.js</title>
+		<title>React and D3: A Tale of Two DOMs</title>
 
 		<link rel="stylesheet" href="css/reveal.css">
-		<link rel="stylesheet" href="css/theme/black.css">
+		<link rel="stylesheet" href="css/theme/white.css">
 
 		<!-- Theme used for syntax highlighting of code -->
 		<link rel="stylesheet" href="lib/css/zenburn.css">
+		<link rel="stylesheet" href="css/styles.css">
 
 		<!-- Printing and PDF exports -->
 		<script>
@@ -24,8 +25,197 @@
 	<body>
 		<div class="reveal">
 			<div class="slides">
-				<section>Slide 1</section>
-				<section>Slide 2</section>
+				<section>
+					<div class="flex-container">
+					  <div class="flex-item"><img src='images/james-happy.png' width='450'/></div>
+					  <div>
+  						<h2 class="flex-item" width='55%' style='white-space: nowrap'>React and D3</h2>
+  						<hr>
+						<h4>A Tale of Two DOMs</h4>
+					  </div>
+					  <div class="flex-item"><p class='text'><img src='images/bob-happy.png' width='400'/></p></div>
+					</div>
+				</section>
+				<section>
+					<h4>I am...</h4>
+					<p>Danielle Closs</p>
+				</section>
+				<section>
+					<h4>Follow along!</h4>
+					<p>code: <a href="http://bit.ly/2mtSyAF">http://bit.ly/2mtSyAF</a></p>
+					<p>slides: <a href="http://bit.ly/2mcnNPu">http://bit.ly/2mcnNPu</a></p>
+				</section>
+				<section>
+					<div class="flex-container">
+					  <div class="flex-item"><img src='images/james-waving.png' width='600'/></div>
+					  <div class="flex-item"><p class='text'>This is James S. Developer,<br>a Javascript developer...</p></div>
+					</div>
+				</section>
+				<section>
+					<div class="flex-container">
+					  <div class="flex-item"><p class='text'>... and this is Bob, his client.<br><br>Bob's company is<br><span>WE MAKE WIDGETS&reg;</span></p></div>
+					  <div class="flex-item"><img src='images/bob-happy.png' width='400'/></div>
+					</div>
+				</section>
+				<section>
+					<div class="flex-container">
+					  <div class="flex-item">
+					  James is making a React app for Bob...
+					  </div>
+					  <div class="flex-item">
+					  </div>
+				  </div>
+				</section>
+				<section>
+					<div class="flex-container">
+					  <div class="flex-item">
+					  
+					  </div>
+					  <div class="flex-item">
+					  ...and Bob wants James to add<br>a data visualization<br>to showcase his awesome sales numbers!!!
+					  </div>
+				  </div>
+				</section>
+				<section>
+					<div class="flex-container">
+					  <div class="flex-item">
+					  <p>James thinks this is a great idea!<br>He can use D3.js to add the visualization!
+					  <br><br>But, where to begin?</p>
+					  </div>
+					  <div class="flex-item">
+					  
+					  </div>
+				  </div>
+				</section>
+				<section>
+					<div class="flex-container">
+					  <div class="flex-item">
+
+					  </div>
+					  <div class="flex-item">
+					  <p>James is now a bit stressed...<br><br>How should he go about adding<br>a D3 data visualization<br>to his React app?</p>
+					  </div>
+				  </div>
+				</section>
+				<section>
+					<h4>James has these questions:</h4>
+					<ul>
+						<li>How would you integrate D3 into a React app?</li>
+						<li>Don't they both manipulate the DOM?<br>How can I make sure they don't step on each other?</li>
+						<li>Where do I draw the line between what React handles<br>and what D3 handles?</li>
+						<li>What are the advantages to using these libraries together?</li>
+					</ul>
+				</section>
+				<section>
+					<h4>Step 1: Review your current app</h4>
+					<p>James' current app has:</p>
+					<ul>
+					<li>an App component:<br>the starting place for the app</li>
+					<li>an InputForm component:<br>with a form for the user to enter a year</li>
+				</section>
+				<section>
+					<h4>Step 2: Get/Find a Standalone D3 Data Visualization</h4>
+					<p>Then James looks around online<br>(of course!)<br>to see if he can find an example of <br>a bar chart created with D3</p>
+				</section>
+				<section>
+					<h4>Step 3: Divide the D3 code into components</h4>
+					<p>James looks at the D3 code,<br>and he sees these components:
+					<ul>
+						<li>The sales data</li>
+						<li>An X axis</li>
+						<li>A Y axis</li>
+						<li>The bar chart</li>
+						</ul>
+				</section>
+				<section>
+					<p>While James works to move these D3 components<br>into his React app, he thinks about:</p>
+					<ul>
+						<li>What should D3 handle?</li>
+						<li>What should React handle?</li>
+						<li>What type of app data flow should I have?</li>
+						<li>How should I break up the data visualization into components?</li>
+						<li>How should I encapsulate the components?</li>
+					</ul>
+				</section>
+				<section>
+					<p>James comes up with some components<br>for his data visualization,<br>and moves them into his React app:</p>
+					<ul>
+						<li>BarChart component - with a bar sub-component</li>
+						<li>ChartAxis component - to use for both X and Y axes</li>
+						<li>one month of static data to work with</li>
+					</ul>
+				</section>
+				<section>
+					<p>At this point, James now has a<br>working bar chart in his React app!<br>But, he's not done yet... </p>
+				</section>
+				<section>
+					<h4>step 4: Make it interactive!</h4>
+					<p>Since James now has the visualization broken up into<br>React components, this part will be easy! Next he needs to:</p>
+					<ul>
+						<li>add an external sales file that can be swapped easily</li>
+						<li>update the code to use a year to get the right sales data to display</li>
+						<li>send the new data to the BarChart component</li>
+					</ul>
+				</section>
+				<section>
+					<p>Let's take a look at what James has come up with:</p>
+					<ul>
+						<li>James has added the sales data as an external json file</li>
+						<li>In App.jsx: he adds a piece of code to get the correct data<br>from the external file, and sets the salesData</li>
+						<li>In BarChart.jsx: he adds a componentWillUpdate, to react to<br>the new sales data coming into the component</li>
+					</ul>
+				</section>
+				<section>
+					<h4>And done!</h4>
+					<p>James now has an interactive D3 data visualization<br>in his React app, which:
+					<ul>
+						<li>allows a user to look at sales data for different years</li>
+						<li>using the same data visualization components</li>
+					</ul>
+				</section>
+				<section>
+					<p>James reflects on all his hard work,<br>thinking about the questions he asked earlier</p>
+				</section>
+				<section>
+					<p><i>How would you integrate D3 into a React app?</i></p>
+					<ul>
+						<li>James started by first reviewing his current React app</li>
+						<li>He then found a standalone D3 visualization</li>
+						<li>He then create React components from the D3 code</li>
+						<li>And, then he made the data visualization interactive,<br>using the best parts of React and D3 together</li>
+					</li>
+				</section>
+				<section>
+					<p><i>Don't they both manipulate the DOM?<br>How can I make sure they don't step on each other?</i></p>
+					<p>Yes, they both manipulate the DOM, but when used together,<br>you should clearly separate who is doing what,<br>according to what each does best.</p>
+				</section>
+				<section>
+					<p><i>Where do I draw the line between what React handles and what D3 handles?</i></p>
+					<p>James finds that with most DOM manipulations,<br>you can let React handle it,<br>like when storing data and passing it to components<br><br>but when it comes to<br>highly complex data viz calculations, leave that to D3</p>
+				</section>
+				<section>
+					<p><i>What are the advantages to using both of these libraries together?</i></p>
+					<p>As James is working, he finds out what these are:</p>
+					<ul>
+						<li>React is faster with DOM manipulation (using it's virtual DOM)</li>
+						<li>React is good at handling page/app state</li>
+						<li>D3 does a better job at the heavy calculations<br>that are sometimes required for data visualizations,<br>like calculating the scales for a bar chart</li>
+					</ul>
+				</section>
+				<section>
+					<p>James shows Bob his app,<br>with the new updated sales bar chart,<br>and Bob is excited by the results!</p>
+				</section>
+				<section>
+					<p>Bob just has one question,<br><br>"Can we make another page with a pie chart??"</p>
+				</section>
+				<section>
+					<p>James politely excuses himself,<br>and decides that a vacation is long overdue!</p>
+				</section>
+				<section>
+					<h4>Thanks for listening!</h4>
+					<p>code: <a href="http://bit.ly/2mtSyAF">http://bit.ly/2mtSyAF</a></p>
+					<p>slides: <a href="http://bit.ly/2mcnNPu">http://bit.ly/2mcnNPu</a></p>
+				</section>
 			</div>
 		</div>
 
@@ -36,7 +226,12 @@
 			// More info https://github.com/hakimel/reveal.js#configuration
 			Reveal.initialize({
 				history: true,
-
+				// center:false,
+				width: "100%",
+			    height: "100%",
+			    margin: 0,
+			    minScale: 1,
+			    maxScale: 1,
 				// More info https://github.com/hakimel/reveal.js#dependencies
 				dependencies: [
 					{ src: 'plugin/markdown/marked.js' },
