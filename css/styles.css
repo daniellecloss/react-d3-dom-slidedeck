@@ -17,4 +17,6 @@
 
 .reveal h4 {padding-bottom: 1em}
 .reveal section img {border: none; box-shadow: none;}
-span{color: #006699}
+.reveal h4, span, i {color: #006699}
+.reveal a {color: lightcoral;}
+.reveal a:hover {color:brown;}
