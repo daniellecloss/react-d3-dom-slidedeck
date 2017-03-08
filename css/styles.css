@@ -3,6 +3,7 @@
   	align-items: center;
   	justify-content: center;
     width: 100%;
+    height: 100%;
 }
 
 .flex-item-1 {
@@ -16,7 +17,10 @@
 	padding-bottom:1em;}
 
 .reveal h4 {padding-bottom: 1em}
-.reveal section img {border: none; box-shadow: none;}
+.reveal section img {border: none; box-shadow: none; height:500px; max-width:100%;}
+.reveal section img.code-image {height:700px}
 .reveal h4, span, i {color: #006699}
-.reveal a {color: lightcoral;}
-.reveal a:hover {color:brown;}
+.reveal a {color: darkolivegreen;}
+.reveal .slides > section {height: 100%; padding: 0;}
+.flex-container.code {background: #cceeff;}
+svg {with: 100%;}

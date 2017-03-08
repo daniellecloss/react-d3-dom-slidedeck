@@ -27,22 +27,22 @@
 			<div class="slides">
 				<section>
 					<div class="flex-container">
-					  <div class="flex-item"><img src='images/james-happy.png' height='500'/></div>
+					  <div class="flex-item"><img src='images/james-happy.png'/></div>
 					  <div>
   						<h2 class="flex-item" width='55%' style='white-space: nowrap'>React and D3</h2>
   						<hr>
 						<h4><i>A Tale of Two DOMs</i></h4>
 					  </div>
-					  <div class="flex-item"><p class='text'><img src='images/bob-happy.png' height='500'/></p></div>
+					  <div class="flex-item"><p class='text'><img src='images/bob-happy.png'/></p></div>
 					</div>
 				</section>
 				<section>
 					<div class="flex-container">
-					  <div class="flex-item"><img src='images/me.png' height='500'/></div>
+					  <div class="flex-item"><img src='images/me.png'/></div>
 					  <div class="flex-item">
 					  	<h4>I am...</h4>
 						<p>Danielle Closs</p>
-						<p><a href="https://twitter.com/daniellecloss">@daniellecloss</a></p>
+						<p><a href="https://twitter.com/daniellecloss" target="_blank">@daniellecloss</a></p>
 						<p><a href="mailto:danielle.c.closs@gmail.com">danielle.c.closs@gmail.com</a></p>
 					</div>
 					<aside class="notes">
@@ -56,9 +56,13 @@
 					</aside>
 				</section>
 				<section>
-					<h4>Follow along!</h4>
-					<p>code: <a href="http://bit.ly/2mtSyAF">http://bit.ly/2mtSyAF</a></p>
-					<p>slides: <a href="http://bit.ly/2mcnNPu">http://bit.ly/2mcnNPu</a></p>
+					<div class="flex-container">
+						<div class="flex-item">
+							<h4>Follow along!</h4>
+							<p>code: <a href="http://bit.ly/2mtSyAF" target="_blank">http://bit.ly/2mtSyAF</a></p>
+							<p>slides: <a href="http://bit.ly/2mcnNPu" target="_blank">http://bit.ly/2mcnNPu</a></p>
+						</div>
+					</div>
 					<aside class="notes">
 						I have the sample code referenced in this presentation, if you want to follow along, or look at it later.
 						Also, for the record, this story is a bit "contrived", but hopefully you will play along!
@@ -66,7 +70,7 @@
 				</section>
 				<section>
 					<div class="flex-container">
-					  <div class="flex-item"><img src='images/james-waving.png' height='500'/></div>
+					  <div class="flex-item"><img src='images/james-waving.png'/></div>
 					  <div class="flex-item"><p class='text'>This is James S. Developer,<br>a Javascript developer...</p></div>
 					</div>
 					<aside class="notes">
@@ -76,7 +80,7 @@
 				<section>
 					<div class="flex-container">
 					  <div class="flex-item"><p class='text'>... and this is Bob, his client.<br><br>Bob's company is<br><span>WE MAKE WIDGETS&reg;</span></p></div>
-					  <div class="flex-item"><img src='images/bob-happy.png' height='500'/></div>
+					  <div class="flex-item"><img src='images/bob-happy.png'/></div>
 					</div>
 					<aside class="notes">
 						This is James' client, Bob.  He owns a company that makes widgets, called WE Make Widgets (registered trademark!)
@@ -100,7 +104,7 @@
 					  	<p>...and Bob wants James to add<br>a data visualization<br>to showcase his sales</p><p>NOW!</p>
 					  </div>
 					  <div class="flex-item">
-					  	<img src='images/bob-mad.png' height='500'/>
+					  	<img src='images/bob-mad.png'/>
 					  </div>
 				  </div>
 					<aside class="notes">
@@ -110,7 +114,7 @@
 				<section>
 					<div class="flex-container">
 					  <div class="flex-item">
-					  	<img src='images/james-thumbs-up.png' height='500'/>
+					  	<img src='images/james-thumbs-up.png'/>
 				  	  </div>
 				      <div class="flex-item">
 					  	<p>James tells Bob he will get right on it!<br>He can use D3.js to add the visualization!
@@ -124,7 +128,7 @@
 				<section>
 					<div class="flex-container">
 					  <div class="flex-item">
-						<img src='images/james-sad.png' height='500'/>
+						<img src='images/james-sad.png'/>
 					  </div>
 					  <div class="flex-item">
 					  	<p>James is now a bit stressed...<br><br>How should he go about adding<br>a D3 data visualization<br>to his React app?</p>
@@ -135,84 +139,131 @@
 					</aside>
 				</section>
 				<section>
-					<h4>James has these questions:</h4>
-					<ol>
-						<li>How would you integrate D3 into a React app?</li>
-						<li>Don't they both manipulate the DOM?<br>How can I make sure they don't step on each other?</li>
-						<li>Where do I draw the line between what React handles<br>and what D3 handles?</li>
-						<li>What are the advantages to using these libraries together?</li>
-					</ol>
+					<div class="flex-container">
+						<div class="flex-item">
+						<h4>James has these questions:</h4>
+							<ol>
+								<li>How would you integrate D3 into a React app?</li>
+								<li>Don't they both manipulate the DOM?<br>How can I make sure they don't step on each other?</li>
+								<li>Where do I draw the line between what React handles<br>and what D3 handles?</li>
+								<li>What are the advantages to using these libraries together?</li>
+							</ol>
+						</div>
+					</div>
 					<aside class="notes">
 						having asked himself these questions, James decides to start by reviewing his current app, and how it can lend itself to adding a data visualization
 					</aside>
 				</section>
 				<section>
-					<h4>Step 1: Review your current app</h4>
-					<p>James' current app has:</p>
-					<ul>
-					<li>an App component:<br>the starting place for the app</li>
-					<li>an InputForm component:<br>with a form for the user to enter a year</li>
-					</ul>
-					<br>
-					<p>step 1 code: <a href="http://bit.ly/2mZlU77">http://bit.ly/2mZlU77</a></p>
+					<div class="flex-container">
+						<div class="flex-item">
+							<h4>[STEP 1]: Review your current app</h4>
+						</div>
+					</div>
+				</section>
+				<section>
+					<div class="flex-container">
+						<div class="flex-item">
+							<img src="images/partial-app.png" class="code-image"/>
+						</div>
+					</div>
 					<aside class="notes">
 						this app has the start of what he needs.  The app has an input form, where the user can enter a year for the sales data he wants to see.  That should help him when he starts adding in the data viz code...
 						Let's look at his base react components and app... (switch to code editor and app)
 					</aside>
 				</section>
 				<section>
-					<h4>Step 2: Get/Find a Standalone D3 Data Visualization</h4>
-					<p>Then James looks around online<br>(of course!)<br>to see if he can find an example of <br>a bar chart created with D3</p>
-					<br>
-					<p>step 2 code: <a href="http://bit.ly/2ly0OzO">http://bit.ly/2ly0OzO</a></p>
+					<div class="flex-container code">
+						<div class="flex-item">
+							<h4>Let's look at the code!</h4>
+							<p>Step 1 code: <a href="http://bit.ly/2m059I3" target="_blank">http://bit.ly/2m059I3</a></p>
+						</div>
+					</div>
+				</section>
+				<section>
+					<div class="flex-container">
+						<div class="flex-item">
+							<h4>[STEP 2]: Get/Find a Standalone D3 Data Visualization</h4>
+							<p>Then James looks around online<br>(of course!)<br>to see if he can find an example of <br>a bar chart created with D3</p>
+						</div>
+					</div>
 					<aside class="notes">
 						James, like any good developer, hits the servers, and looks around online, to find an example of a D3 bar chart that he can use as an example of the data visualization that he wants in his react app
 						Let's look at the example that James found online (switch to code editor and app)
 					</aside>
 				</section>
 				<section>
-					<h4>Step 3: Divide the D3 code into components</h4>
-					<p>James looks at the D3 code,<br>and he sees these components:
-					<ul>
-						<li>The sales data</li>
-						<li>An X axis</li>
-						<li>A Y axis</li>
-						<li>The bar chart</li>
-					</ul>
+					<div class="flex-container code">
+						<div class="flex-item">
+							<h4>Let's look at the code!</h4>
+							<p>Step 2 code: <a href="http://bit.ly/2nc1ebw" target="_blank">http://bit.ly/2nc1ebw</a></p>
+						</div>
+					</div>
+					<aside class="notes">
+						<a href="file:///Users/daniellecloss/projects/react-d3-dom-code/standalone-d3/index.html">file:///Users/daniellecloss/projects/react-d3-dom-code/standalone-d3/index.html</a>
+					</aside>
+				</section>
+				<section>
+					<div class="flex-container">
+						<div class="flex-item">
+							<h4>[STEP 3]: Divide the D3 code into components</h4>
+							<p>James looks at the D3 code,<br>and he sees these components:</p>
+							<ul>
+								<li>An X axis</li>
+								<li>A Y axis</li>
+								<li>The bar chart</li>
+							</ul>
+						</div>
+					</div>
 					<aside class="notes">
 						James then looks at this D3 code, mentally separating it into components.  This is a "react-y" way of looking at code, and will help James to build the D3 visualization with React components
 					</aside>
 				</section>
 				<section>
-					<p>While James works to move these D3 components<br>into his React app, he thinks about:</p>
-					<ul>
-						<li>What should D3 handle?</li>
-						<li>What should React handle?</li>
-						<li>What type of app data flow should I have?</li>
-						<li>How should I break up the data visualization into components?</li>
-						<li>How should I encapsulate the components?</li>
-					</ul>
+					<div class="flex-container">
+						<div class="flex-item">
+							<p>While James works to move these D3 components<br>into his React app, he thinks about:</p>
+							<ul>
+								<li>What should D3 handle, and what should React handle?</li>
+								<li>What type of data flow should the I have?</li>
+								<li>How should I break up the data visualization into components?</li>
+								<li>How should I encapsulate these components?</li>
+							</ul>
+						</div>
+					</div>
 					<aside class="notes">
 						There are many things to think about when building out the D3 react components, but they are all things you would need to think about when building out any kind of coded components, so, for the most part, this list should look familiar to you
 					</aside>
 				</section>
 				<section>
-					<p>James codes up his components<br>for his data visualization,<br>and moves them into his React app:</p><br>
-					<ul>
-						<li>BarChart component - with a bar sub-component</li>
-						<li>ChartAxis component - to use for both X and Y axes</li>
-						<li>one month of static data to work with</li>
-					</ul>
-					<br>
-					<p>step 3 code: <a href="http://bit.ly/2n8gI03">http://bit.ly/2n8gI03</a></p>
+					<div class="flex-container">
+						<div class="flex-item">
+							<p>James codes up his components<br>for his data visualization,<br>and moves them into his React app</p><br>
+						</div>
+					</div>
+					</section>
+					<section>
+						<div class="flex-container">
+							<div class="flex-item">
+								<img src="images/full-app.png" class="code-image"/>
+							</div>
+						</div>
 					<aside class="notes">
 						Let's take a look at the components that James came up with... (switch to code editor and app)
 					</aside>
 				</section>
 				<section>
+					<div class="flex-container code">
+						<div class="flex-item">
+							<h4>Let's look at the code!</h4>
+							<p>Step 3 code: <a href="http://bit.ly/2mz77Cl" target="_blank">http://bit.ly/2mz77Cl</a></p>
+						</div>
+					</div>
+				</section>
+				<section>
 					<div class="flex-container">
 					  <div class="flex-item">
-						<img src='images/james-happy.png' height='500'/>
+						<img src='images/james-happy.png'/>
 					  </div>
 					  <div class="flex-item">
 						<p>At this point, James now has a<br>working bar chart in his React app!<br>But, he's not done yet... </p>
@@ -223,37 +274,56 @@
 					</aside>
 				</section>
 				<section>
-					<h4>step 4: Make it interactive!</h4>
-					<p>Since James now has the visualization broken up into<br>React components, this part will be easy! Next he needs to:</p>
-					<ul>
-						<li>add an external sales file that can be swapped easily</li>
-						<li>update the code to use a year to get the right sales data to display</li>
-						<li>send the new data to the BarChart component</li>
-					</ul>
+					<div class="flex-container">
+						<div class="flex-item">
+							<h4>[STEP 4]: Make it interactive!</h4>
+							<p>Since James now has the visualization broken up into<br>React components, this part will be easy! Next he needs to:</p>
+							<ul>
+								<li>Add external sales data</li>
+								<li>Use a user selected year for the data</li>
+								<li>Send the new data to the BarChart</li>
+							</ul>
+						</div>
+					</div>
 					<aside class="notes">
 						Because of the work that james already did to put his D3 data visualiztion into react components, adding interactivity is pretty easy...
 					</aside>
 				</section>
 				<section>
-					<p>Let's take a look at what James has come up with:</p>
-					<ul>
-						<li>James has added the sales data as an external json file</li>
-						<li>In App.jsx: he adds a piece of code to get the correct data<br>from the external file, and sets the salesData</li>
-						<li>In BarChart.jsx: he adds a componentWillUpdate, to react to<br>the new sales data coming into the component</li>
-					</ul>
-					<br>
-					<p>step 4 code: <a href="http://bit.ly/2mcZbET">http://bit.ly/2mcZbET</a></p>
+					<div class="flex-container">
+						<div class="flex-item">
+							<p>Let's take a look at what James has come up with:</p>
+							<ul>
+								<li>James has added the sales data as an external json file</li>
+								<li>In App.jsx: he adds a piece of code to get the correct data<br>from the external file, and sets the salesData</li>
+								<li>In BarChart.jsx: he adds a componentWillUpdate, to react to<br>the new sales data coming into the component</li>
+							</ul>
+						</div>
+					</div>
 					<aside class="notes">
 						Let's take a look at what James has done to finish up the app, and make it fully functional (switch to code editor and app)
 					</aside>
 				</section>
 				<section>
-					<h4>And done!</h4>
-					<p>James now has an interactive D3 data visualization<br>in his React app, which:
-					<ul>
-						<li>allows a user to look at sales data for different years...</li>
-						<li>...and uses the same data visualization components</li>
-					</ul>
+					<div class="flex-container code">
+						<div class="flex-item">
+							<h4>Let's look at the code!</h4>
+							<p>Step 4 code: <a href="http://bit.ly/2mgU9aq" target="_blank">http://bit.ly/2mgU9aq</a></p>
+							<p>app: <a href="http://localhost:8081/" target="_blank">http://localhost:8081/</a></p>
+						</div>
+					</div>
+				</section>
+				<section>
+					<div class="flex-container">
+						<div class="flex-item">
+							<h4>And done!</h4>
+							<p>James now has an interactive D3 data visualization<br>in his React app, which:</p>
+							<ul>
+								<li>allows a user to look at sales data for different years...</li>
+								<li>...and uses the same data visualization components</li>
+							</ul>
+						</div>
+					</div>
 					<aside class="notes">
 						James is rather proud of his accomplishment at this point, and feels that this is a good base to be able to extend his app in the future...
 					</aside>
@@ -261,7 +331,7 @@
 				<section>
 					<div class="flex-container">
 					  <div class="flex-item">
-						<img src='images/james-question.png' height='500'/>
+						<img src='images/james-question.png'/>
 					  </div>
 					  <div class="flex-item">
 						<p>James reflects on all his hard work,<br>thinking about the questions<br>he asked earlier</p>
@@ -272,39 +342,63 @@
 					</aside>
 				</section>
 				<section>
-					<p><i>1. How would you integrate D3 into a React app?</i></p>
-					<ul>
-						<li>James started by first reviewing his current React app</li>
-						<li>He then found a standalone D3 visualization</li>
-						<li>He then create React components from the D3 code</li>
-						<li>And, then he made the data visualization interactive,<br>using the best parts of React and D3 together</li>
-					</li>
+					<div class="flex-container">
+						<div class="flex-item">
+							<p><i>1. How would you integrate D3 into a React app?</i></p>
+							<ul>
+								<li>James started by first reviewing his current React app</li>
+								<li>He then found a standalone D3 visualization</li>
+								<li>He then create React components from the D3 code</li>
+								<li>And, then he made the data visualization interactive,<br>using the best parts of React and D3 together</li>
+							</ul>
+						</div>
+					</div>
 					<aside class="notes">
 						
 					</aside>
 				</section>
 				<section>
-					<p><i>2. Don't they both manipulate the DOM?<br>How can I make sure they don't step on each other?</i></p>
-					<p>Yes, they both manipulate the DOM, but when used together,<br>you should clearly separate who is doing what,<br>according to what each does best.</p>
+					<div class="flex-container">
+						<div class="flex-item">
+							<p><i>2. Don't they both manipulate the DOM?<br>How can I make sure they don't step on each other?</i></p>
+							<p>Yes, they both manipulate the DOM.<br><br>When used together,<br>you should clearly separate who is doing what,<br>according to what each does best.</p>
+						</div>
+					</div>
 					<aside class="notes">
 					
 					</aside>
 				</section>
 				<section>
-					<p><i>3. Where do I draw the line between what React handles and what D3 handles?</i></p>
-					<p>James finds that with most DOM manipulations,<br>you can let React handle it,<br>like when storing data and passing it to components<br><br>but when it comes to<br>highly complex data viz calculations, leave that to D3</p>
+					<div class="flex-container">
+						<div class="flex-item">
+							<p><i>3. Where do I draw the line between what React handles and what D3 handles?</i></p>
+							<p>James finds that with most DOM manipulations,<br>you can let React handle it,<br>like when storing data and passing it to components.<br><br>But when it comes to<br>highly complex data viz calculations, leave that to D3.</p>
+						</div>
+					</div>
 					<aside class="notes">
-					
+						
 					</aside>
 				</section>
 				<section>
-					<p><i>4. What are the advantages to using both of these libraries together?</i></p>
-					<p>As James is working, he finds out what these are:</p>
-					<ul>
-						<li>React is faster with DOM manipulation (using it's virtual DOM)</li>
-						<li>React is good at handling page/app state</li>
-						<li>D3 does a better job at the heavy calculations<br>that are sometimes required for data visualizations,<br>like calculating the scales for a bar chart</li>
-					</ul>
+					<div class="flex-container">
+						<div class="flex-item">
+						<svg width="100%" viewBox="0 0 640 225" xmlns="http://www.w3.org/2000/svg"><g fill="none" fill-rule="evenodd"><circle fill-opacity=".504" fill="#65D9F9" cx="318" cy="115" r="98" /><circle fill-opacity=".503" fill="#F79E4E" cx="397" cy="115" r="98" /><path d="M357.5 204.428c34.451-15.19 58.5-49.644 58.5-89.714S391.951 40.19 357.5 25C323.049 40.19 299 74.644 299 114.714s24.049 74.523 58.5 89.714z" fill="#FFF" /><circle stroke="#979797" cx="318" cy="115" r="98" /><circle stroke="#979797" cx="397" cy="115" r="98" /><text font-family="Helvetica" font-size="15" letter-spacing=".083" fill="#000"><tspan x="342.877" y="108">DOM</tspan> <tspan x="317.472" y="126">Manipulation</tspan></text><text font-family="Helvetica" font-size="15" letter-spacing=".083" fill="#000"><tspan x="426" y="59">Math</tspan></text><text font-family="Helvetica" font-size="15" letter-spacing=".083" fill="#000"><tspan x="426" y="88">Scales</tspan></text><text font-family="Helvetica" font-size="15" letter-spacing=".083" fill="#000"><tspan x="426" y="117">Layouts</tspan></text><text font-family="Helvetica" font-size="15" letter-spacing=".083" fill="#000"><tspan x="426" y="146">Utilities</tspan></text><text font-family="Helvetica" font-size="15" letter-spacing=".083" fill="#000"><tspan x="426" y="175">Etc.</tspan></text><text font-family="Helvetica" font-size="10" letter-spacing=".056" fill="#000"><tspan x="239.745" y="143">Components</tspan></text><text font-family="Helvetica" font-size="15" letter-spacing=".083" fill="#000"><tspan x="249.32" y="108">Server </tspan> <tspan x="224.036" y="126">Rendering</tspan></text><text font-family="Helvetica" font-size="48" letter-spacing=".267" fill="#000"><tspan x="70.276" y="126">React</tspan></text><text font-family="Helvetica" font-size="48" letter-spacing=".267" fill="#000"><tspan x="517" y="126">d3</tspan></text></g></svg>
+						<a href="http://www.macwright.org/2016/10/11/d3-and-react.html" style="font-size:.65em;" target="_blank">http://www.macwright.org/2016/10/11/d3-and-react.html</a>
+						</div>
+					</div>
+				</section>
+				<section>
+					<div class="flex-container">
+						<div class="flex-item">
+							<p><i>4. What are the advantages to using both of these libraries together?</i></p>
+							<p>As James is working, he finds out what these are:</p>
+							<ul>
+								<li>React is faster with DOM manipulation (using it's virtual DOM)</li>
+								<li>React is good at handling page/app state</li>
+								<li>D3 does a better job at the heavy calculations<br>that are sometimes required for data visualizations,<br>like calculating the scales for a bar chart</li>
+							</ul>
+						</div>
+					</div>
 					<aside class="notes">
 					
 					</aside>
@@ -312,13 +406,13 @@
 				<section>
 					<div class="flex-container">
 					  <div class="flex-item">
-						<img src='images/james-thumbs-up.png' height='500'/>
+						<img src='images/james-thumbs-up.png'/>
 					  </div>
 					  <div class="flex-item">
-						<p>James shows Bob his app,<br>with the new updated<br>sales bar chart, and<br>Bob is excited by the results!</p>
+						<p>James shows Bob his app,<br>with the new <br>sales bar chart, and<br>Bob is excited!</p>
 					  </div>
 					  <div class="flex-item">
-						<img src='images/bob-thumbs-up.png' height='500'/>
+						<img src='images/bob-thumbs-up.png'/>
 					  </div>
 					</div>
 					<aside class="notes">
@@ -326,7 +420,11 @@
 					</aside>
 				</section>
 				<section>
-					<p>Bob just has one question,<br><br>"Can we make another page with a pie chart??"</p>
+					<div class="flex-container">
+						<div class="flex-item">
+							<p>Bob just has one question,<br><br>"Can we make another page with a pie chart??"</p>
+						</div>
+					</div>
 					<aside class="notes">
 						That he wants another data visualization in his site!!!
 					</aside>
@@ -334,19 +432,23 @@
 				<section>
 					<div class="flex-container">
 					  <div class="flex-item">
-					  	<img src='images/james-vacation.png' height='500'/>
+					  	<img src='images/james-vacation.png'/>
 					  </div>
 					  <div class="flex-item">
 						<p>James politely excuses himself,<br>and decides that a vacation is long overdue!</p>
 					  </div>
 				</section>
 				<section>
-					<h4>Thanks for listening!</h4>
-					<p>code: <a href="http://bit.ly/2mtSyAF">http://bit.ly/2mtSyAF</a></p>
-					<p>slides: <a href="http://bit.ly/2mcnNPu">http://bit.ly/2mcnNPu</a></p>
-					<br>
-					<p><a href="https://twitter.com/daniellecloss">@daniellecloss</a></p>
-					<p><a href="mailto:danielle.c.closs@gmail.com">danielle.c.closs@gmail.com</a></p>
+					<div class="flex-container">
+						<div class="flex-item">
+							<h4>Thanks for listening!</h4>
+							<p>code: <a href="http://bit.ly/2mtSyAF" target="_blank">http://bit.ly/2mtSyAF</a></p>
+							<p>slides: <a href="http://bit.ly/2mcnNPu" target="_blank">http://bit.ly/2mcnNPu</a></p>
+							<br>
+							<p><a href="https://twitter.com/daniellecloss" target="_blank">@daniellecloss</a></p>
+							<p><a href="mailto:danielle.c.closs@gmail.com">danielle.c.closs@gmail.com</a></p>
+						</div>
+					</div>
 				</section>
 			</div>
 		</div>
@@ -358,7 +460,7 @@
 			// More info https://github.com/hakimel/reveal.js#configuration
 			Reveal.initialize({
 				history: true,
-				// center:false,
+				center:false,
 				width: "100%",
 			    height: "100%",
 			    margin: 0,
