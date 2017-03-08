@@ -23,4 +23,5 @@
 .reveal a {color: darkolivegreen;}
 .reveal .slides > section {height: 100%; padding: 0;}
 .flex-container.code {background: #cceeff;}
+.flex-container.key {background: #e6ffe6;}
 svg {with: 100%;}

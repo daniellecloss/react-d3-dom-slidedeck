@@ -294,9 +294,9 @@
 						<div class="flex-item">
 							<p>Let's take a look at what James has come up with:</p>
 							<ul>
-								<li>James has added the sales data as an external json file</li>
-								<li>In App.jsx: he adds a piece of code to get the correct data<br>from the external file, and sets the salesData</li>
-								<li>In BarChart.jsx: he adds a componentWillUpdate, to react to<br>the new sales data coming into the component</li>
+								<li>New external json file with monthly sales data</li>
+								<li>App: adds code to get the correct sales data, given the year</li>
+								<li>BarChart: adds componentWillUpdate, to react to<br>the data prop being updated</li>
 							</ul>
 						</div>
 					</div>
@@ -342,7 +342,7 @@
 					</aside>
 				</section>
 				<section>
-					<div class="flex-container">
+					<div class="flex-container key">
 						<div class="flex-item">
 							<p><i>1. How would you integrate D3 into a React app?</i></p>
 							<ul>
@@ -358,7 +358,7 @@
 					</aside>
 				</section>
 				<section>
-					<div class="flex-container">
+					<div class="flex-container key">
 						<div class="flex-item">
 							<p><i>2. Don't they both manipulate the DOM?<br>How can I make sure they don't step on each other?</i></p>
 							<p>Yes, they both manipulate the DOM.<br><br>When used together,<br>you should clearly separate who is doing what,<br>according to what each does best.</p>
@@ -369,7 +369,7 @@
 					</aside>
 				</section>
 				<section>
-					<div class="flex-container">
+					<div class="flex-container key">
 						<div class="flex-item">
 							<p><i>3. Where do I draw the line between what React handles and what D3 handles?</i></p>
 							<p>James finds that with most DOM manipulations,<br>you can let React handle it,<br>like when storing data and passing it to components.<br><br>But when it comes to<br>highly complex data viz calculations, leave that to D3.</p>
@@ -388,9 +388,9 @@
 					</div>
 				</section>
 				<section>
-					<div class="flex-container">
+					<div class="flex-container key">
 						<div class="flex-item">
-							<p><i>4. What are the advantages to using both of these libraries together?</i></p>
+							<p><i>4. What are the advantages of using both of these libraries together?</i></p>
 							<p>As James is working, he finds out what these are:</p>
 							<ul>
 								<li>React is faster with DOM manipulation (using it's virtual DOM)</li>
