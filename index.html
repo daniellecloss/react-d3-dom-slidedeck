@@ -48,10 +48,8 @@
 					<aside class="notes">
 						<ul>
 							<li>My name is Danielle</li>
-							<li>I work as a Web UI Developer</li>
-							<li>at Arbor Networks</li>
-							<li>on their network visibility product</li>
-							<li>I have been working in the Ann Arbor area for 8 years</li>
+							<li>work at Arbor Networks on their network visibility product</li>
+							<li>been working as a UI Developer in Ann Arbor area for 8 years</li>
 						<ul>
 					</aside>
 				</section>
@@ -64,9 +62,15 @@
 						</div>
 					</div>
 					<aside class="notes">
-						<p>I have the sample code referenced in this presentation, if you want to follow along, or look at it later.</p>
-
-						<p>I am going to tell you a story, a story that may seem familiar to you, about a javascript developer...</p>
+						<ul>
+							<li>links to both the slides and code for this presentation</li>
+							<li>follow along</li>
+							<li>look at it later</li>
+							<li>tell you a story</li>
+							<li>a story that may seem familiar</li>
+							<li>about a javascript developer</li>
+							<li>very much like many of you in the audience...</li>
+						</ul>
 					</aside>
 				</section>
 				<section>
@@ -75,7 +79,7 @@
 					  <div class="flex-item"><p class='text'>This is James S. Developer</p></div>
 					</div>
 					<aside class="notes">
-						<p>This is James, and he is the protagonist of this story...</p>
+						<p>This is James, and he is the protagonist of our story...</p>
 					</aside>
 				</section>
 				<section>
@@ -109,7 +113,12 @@
 					  </div>
 				  </div>
 					<aside class="notes">
-						<p>To make the site more flashy, Bob wants a bar chart!  Showing his sales!  and he wants it NOW!  (as all clients do!)</p><p>I believe many of you are familiar with this scenario...</p>
+						<ul>
+							<li>To make the site more flashy, Bob wants a bar chart!</li>
+							<li>Showing his sales!</li>
+							<li>and he wants it NOW!  (as many clients do!)</li>
+							<li>I believe many of you are familiar with this scenario...</li>
+						</ul>
 					</aside>
 				</section>
 				<section>
@@ -123,8 +132,12 @@
 					  </div>
 				  </div>
 					<aside class="notes">
-						<p>James, being the good developer he is, tells Bob he will start on it right away, but this is new territory for James;</p>
-						<p>He has not done a data visualization in a react app before, and he is not sure where to start...</p>
+						<ul>
+							<li>James, being the good developer he is, tells Bob he will start on it right away</li>
+							<li>but this is new territory for James;</li>
+							<li>He has not done a data visualization in a react app before</li>
+							<li>he is not sure where to start...</li>
+						</ul>
 					</aside>
 				</section>
 				<section>
@@ -137,7 +150,15 @@
 					  </div>
 				  </div>
 					<aside class="notes">
-						<p>James is now stressed and frustrated.   But, being the good developer that he is, he analyzes the problem, and breaks it down into pieces, starting with his questions...</p>
+						<ul>
+							<li>James is now stressed and frustrated.</li>
+							<li>But, again, being the good developer that he is, he:</li>
+							<ul>
+								<li>analyzes the problem</li>
+								<li>and breaks it down into pieces</li>
+							</ul>
+							<li>First he starts the questions he has...</li>
+						</ul>
 					</aside>
 				</section>
 				<section>
@@ -162,6 +183,9 @@
 							<h4>[STEP 1]: Review your current app</h4>
 						</div>
 					</div>
+					<aside class="notes">
+						<p>Always start from where you are!</p>
+					</aside>
 				</section>
 				<section>
 					<div class="flex-container">
@@ -170,7 +194,12 @@
 						</div>
 					</div>
 					<aside class="notes">
-						<p>His current app has the start of what he needs.  The app has an input form, where the user can enter a year for the sales data he wants to see.  That should help him when he starts adding in the data viz code...</p>
+						<ul>
+							<li>this is what his current app structure looks like</li>
+							<li>The app has a starting place, the App component</li>
+							<li>and an InputForm, where the user can enter a year for the sales data he wants to see</li>
+							<li>That should help him when he starts adding in the data viz code for the bar chart...</li>
+						</ul>
 					</aside>
 				</section>
 				<section>
@@ -181,7 +210,7 @@
 						</div>
 					</div>
 					<aside class="notes">
-						<p>Let's look at his base react components and app... (switch to code editor and app)</p>
+						<p>Let's look at the code for his base react components and app... (switch to code editor and app)</p>
 					</aside>
 				</section>
 				<section>
@@ -192,7 +221,11 @@
 						</div>
 					</div>
 					<aside class="notes">
-						<p>James, like any good developer, hits the interwebs, and looks around to find an example of a D3 bar chart that he can use as an example of the data visualization that he wants in his react app</p>
+						<ul>
+							<li>James, like any good developer, hits the interwebs</li>
+							<li>looks around to find an example of a D3 bar chart</li>
+							<li>to use as a source of the data viz code</li>
+						</ul>
 					</aside>
 				</section>
 				<section>
@@ -220,7 +253,12 @@
 						</div>
 					</div>
 					<aside class="notes">
-						<p>James then looks at this D3 code, mentally separating it into components.  This is a "react-y" way of looking at code, and will help James to build the D3 visualization with React components</p>
+						<ul>
+							<li>James then looks at this D3 code</li>
+							<li>mentally separates it into components</li>
+							<li>This is a "react-y" way of looking at code</li>
+							<li>this will help James to move the D3 code into React components</li>
+						</ul>
 					</aside>
 				</section>
 				<section>
@@ -236,7 +274,11 @@
 						</div>
 					</div>
 					<aside class="notes">
-						<p>There are many things to think about when building out the D3 react components, but they are all things you would need to think about when building out any kind of coded components, so, for the most part, this list should look familiar to you</p>
+						<ul>
+							<li>These concepts are not specific to react code</li>
+							<li>they are all things you would need to think about when building out any kind of coded component system</li>
+							<li>this list should already look familiar to you</li>
+						</ul>
 					</aside>
 				</section>
 				<section>
@@ -246,7 +288,12 @@
 						</div>
 					</div>
 					<aside class="notes">
-						<p>Here is the new app layout, with the additional components for the data visualization</p>
+						<ul>
+							<li>Here is the new app layout, with the additional components for the data visualization</li>
+							<li>the dashed line surrounds the original app components</li>
+							<li>we now have a BarChart components, made of an 'included' rectangles subcomponent</li>
+							<li>and a ChartAxis component</li>
+						</ul>
 					</aside>
 				</section>
 				<section>
@@ -270,7 +317,11 @@
 					  </div>
 					</div>
 					<aside class="notes">
-						<p>James is almost done!  He has a working data visualization, but he is still missing a key piece...</p>
+						<ul>
+							<li>James is almost done!</li>
+							<li>He has a working data visualization</li>
+							<li>but he is still missing a key piece...</li>
+						</ul>
 					</aside>
 				</section>
 				<section>
@@ -295,13 +346,19 @@
 							<p>Let's take a look at what James has come up with:</p>
 							<ul>
 								<li>New external json file with monthly sales data</li>
-								<li>App: adds code to get the correct sales data, given the year</li>
-								<li>BarChart: adds componentWillUpdate, to react to<br>the data prop being updated</li>
+								<li>App: add code to get the correct sales data, given the year</li>
+								<li>BarChart: add componentWillUpdate, to react to<br>the data prop being updated</li>
+								<li>React will update the bars in the BarChart</li>
+								<li>D3 can recalculate the scales for the axes</li>
 							</ul>
 						</div>
 					</div>
 					<aside class="notes">
-						<p>React can hang onto the data and app state, and D3 can react to the data updates, updating the bar chart and calculating the correct scale for the axis, in response to the new data that is passed into the component</p>
+						<ul>
+							<li>React can hang onto the data and app state</li>
+							<li>When the React BarChart component responds to the new data that is passed in</li>
+							<li>React can update the bar chart data and D3 can calculate the correct scale for the axis</li>
+						</ul>
 					</aside>
 				</section>
 				<section>
@@ -368,7 +425,7 @@
 						</div>
 					</div>
 					<aside class="notes">
-						<p>This is really a practice synonymous with good software development...</p>
+						<p>The idea of 'clear separation' is really a practice synonymous with good software development...</p>
 					</aside>
 				</section>
 				<section>
@@ -406,7 +463,11 @@
 						</div>
 					</div>
 					<aside class="notes">
-						<p>I found this graphic while researching this talk, and thought it summed up the overlap in DOM manipulation between React and D3 nicely!</p>
+						<ul>
+							<li>I found this graphic while researching this talk, and thought it summed up the overlap in DOM manipulation between React and D3 nicely!</li>
+							<li>this graphic also gave a nice list of what React does well</li>
+							<li>and what D3 does well</li>
+						</ul>
 					</aside>
 				</section>
 				<section>
@@ -445,7 +506,7 @@
 					  </div>
 				  </div>
 				  <aside class="notes">
-				  	<p>Poor james!  I'm sure you can relate though!</p>
+				  	<p>Poor james!  I'm sure you can probably relate to having had a similar experience :)</p>
 				  </aside>
 				</section>
 				<section>
