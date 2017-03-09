@@ -74,12 +74,12 @@
 					  <div class="flex-item"><p class='text'>This is James S. Developer,<br>a Javascript developer...</p></div>
 					</div>
 					<aside class="notes">
-						This is James, he is a javascript dev.  He has a client that is bulding a react site for...
+						This is James, he is a javascript dev...
 					</aside>
 				</section>
 				<section>
 					<div class="flex-container">
-					  <div class="flex-item"><p class='text'>... and this is Bob, his client.<br><br>Bob's company is<br><span>WE MAKE WIDGETS&reg;</span></p></div>
+					  <div class="flex-item"><p class='text'>...and this is Bob, his client</span></p></div>
 					  <div class="flex-item"><img src='images/bob-happy.png'/></div>
 					</div>
 					<aside class="notes">
@@ -101,7 +101,7 @@
 				<section>
 					<div class="flex-container">
 					  <div class="flex-item">
-					  	<p>...and Bob wants James to add<br>a data visualization<br>to showcase his sales</p><p>NOW!</p>
+					  	<p>...and Bob wants James to add<br>a bar chart to show his sales</p><p>...and he wants it NOW!</p>
 					  </div>
 					  <div class="flex-item">
 					  	<img src='images/bob-mad.png'/>
@@ -117,7 +117,7 @@
 					  	<img src='images/james-thumbs-up.png'/>
 				  	  </div>
 				      <div class="flex-item">
-					  	<p>James tells Bob he will get right on it!<br>He can use D3.js to add the visualization!
+					  	<p>James tells Bob he will get right on it!<br><br>He can use D3.js<br>to add the data visualization!
 					  	<br><br>But, where to begin?</p>
 					  </div>
 				  </div>
@@ -146,7 +146,7 @@
 								<li>How would you integrate D3 into a React app?</li>
 								<li>Don't they both manipulate the DOM?<br>How can I make sure they don't step on each other?</li>
 								<li>Where do I draw the line between what React handles<br>and what D3 handles?</li>
-								<li>What are the advantages to using these libraries together?</li>
+								<li>What are the advantages of using these libraries together?</li>
 							</ol>
 						</div>
 					</div>
@@ -346,10 +346,10 @@
 						<div class="flex-item">
 							<p><i>1. How would you integrate D3 into a React app?</i></p>
 							<ul>
-								<li>James started by first reviewing his current React app</li>
-								<li>He then found a standalone D3 visualization</li>
-								<li>He then create React components from the D3 code</li>
-								<li>And, then he made the data visualization interactive,<br>using the best parts of React and D3 together</li>
+								<li>Start by first reviewing your current React app</li>
+								<li>Then find an example standalone D3 data visualization</li>
+								<li>Create React components from the D3 code</li>
+								<li>Make the data visualization interactive,<br>using the best parts of React and D3 together</li>
 							</ul>
 						</div>
 					</div>
@@ -372,20 +372,12 @@
 					<div class="flex-container key">
 						<div class="flex-item">
 							<p><i>3. Where do I draw the line between what React handles and what D3 handles?</i></p>
-							<p>James finds that with most DOM manipulations,<br>you can let React handle it,<br>like when storing data and passing it to components.<br><br>But when it comes to<br>highly complex data viz calculations, leave that to D3.</p>
+							<p>With most DOM manipulations,<br>you can let React handle it,<br>like when storing data and passing it to components.<br><br>But when it comes to<br>highly complex data viz calculations, leave that to D3.</p>
 						</div>
 					</div>
 					<aside class="notes">
 						
 					</aside>
-				</section>
-				<section>
-					<div class="flex-container">
-						<div class="flex-item">
-						<svg width="100%" viewBox="0 0 640 225" xmlns="http://www.w3.org/2000/svg"><g fill="none" fill-rule="evenodd"><circle fill-opacity=".504" fill="#65D9F9" cx="318" cy="115" r="98" /><circle fill-opacity=".503" fill="#F79E4E" cx="397" cy="115" r="98" /><path d="M357.5 204.428c34.451-15.19 58.5-49.644 58.5-89.714S391.951 40.19 357.5 25C323.049 40.19 299 74.644 299 114.714s24.049 74.523 58.5 89.714z" fill="#FFF" /><circle stroke="#979797" cx="318" cy="115" r="98" /><circle stroke="#979797" cx="397" cy="115" r="98" /><text font-family="Helvetica" font-size="15" letter-spacing=".083" fill="#000"><tspan x="342.877" y="108">DOM</tspan> <tspan x="317.472" y="126">Manipulation</tspan></text><text font-family="Helvetica" font-size="15" letter-spacing=".083" fill="#000"><tspan x="426" y="59">Math</tspan></text><text font-family="Helvetica" font-size="15" letter-spacing=".083" fill="#000"><tspan x="426" y="88">Scales</tspan></text><text font-family="Helvetica" font-size="15" letter-spacing=".083" fill="#000"><tspan x="426" y="117">Layouts</tspan></text><text font-family="Helvetica" font-size="15" letter-spacing=".083" fill="#000"><tspan x="426" y="146">Utilities</tspan></text><text font-family="Helvetica" font-size="15" letter-spacing=".083" fill="#000"><tspan x="426" y="175">Etc.</tspan></text><text font-family="Helvetica" font-size="10" letter-spacing=".056" fill="#000"><tspan x="239.745" y="143">Components</tspan></text><text font-family="Helvetica" font-size="15" letter-spacing=".083" fill="#000"><tspan x="249.32" y="108">Server </tspan> <tspan x="224.036" y="126">Rendering</tspan></text><text font-family="Helvetica" font-size="48" letter-spacing=".267" fill="#000"><tspan x="70.276" y="126">React</tspan></text><text font-family="Helvetica" font-size="48" letter-spacing=".267" fill="#000"><tspan x="517" y="126">d3</tspan></text></g></svg>
-						<a href="http://www.macwright.org/2016/10/11/d3-and-react.html" style="font-size:.65em;" target="_blank">http://www.macwright.org/2016/10/11/d3-and-react.html</a>
-						</div>
-					</div>
 				</section>
 				<section>
 					<div class="flex-container key">
@@ -402,6 +394,14 @@
 					<aside class="notes">
 					
 					</aside>
+				</section>
+				<section>
+					<div class="flex-container">
+						<div class="flex-item">
+						<svg width="100%" viewBox="0 0 640 225" xmlns="http://www.w3.org/2000/svg"><g fill="none" fill-rule="evenodd"><circle fill-opacity=".504" fill="#65D9F9" cx="318" cy="115" r="98" /><circle fill-opacity=".503" fill="#F79E4E" cx="397" cy="115" r="98" /><path d="M357.5 204.428c34.451-15.19 58.5-49.644 58.5-89.714S391.951 40.19 357.5 25C323.049 40.19 299 74.644 299 114.714s24.049 74.523 58.5 89.714z" fill="#FFF" /><circle stroke="#979797" cx="318" cy="115" r="98" /><circle stroke="#979797" cx="397" cy="115" r="98" /><text font-family="Helvetica" font-size="15" letter-spacing=".083" fill="#000"><tspan x="342.877" y="108">DOM</tspan> <tspan x="317.472" y="126">Manipulation</tspan></text><text font-family="Helvetica" font-size="15" letter-spacing=".083" fill="#000"><tspan x="426" y="59">Math</tspan></text><text font-family="Helvetica" font-size="15" letter-spacing=".083" fill="#000"><tspan x="426" y="88">Scales</tspan></text><text font-family="Helvetica" font-size="15" letter-spacing=".083" fill="#000"><tspan x="426" y="117">Layouts</tspan></text><text font-family="Helvetica" font-size="15" letter-spacing=".083" fill="#000"><tspan x="426" y="146">Utilities</tspan></text><text font-family="Helvetica" font-size="15" letter-spacing=".083" fill="#000"><tspan x="426" y="175">Etc.</tspan></text><text font-family="Helvetica" font-size="10" letter-spacing=".056" fill="#000"><tspan x="239.745" y="143">Components</tspan></text><text font-family="Helvetica" font-size="15" letter-spacing=".083" fill="#000"><tspan x="249.32" y="108">Server </tspan> <tspan x="224.036" y="126">Rendering</tspan></text><text font-family="Helvetica" font-size="48" letter-spacing=".267" fill="#000"><tspan x="70.276" y="126">React</tspan></text><text font-family="Helvetica" font-size="48" letter-spacing=".267" fill="#000"><tspan x="517" y="126">d3</tspan></text></g></svg>
+						<a href="http://www.macwright.org/2016/10/11/d3-and-react.html" style="font-size:.65em;" target="_blank">http://www.macwright.org/2016/10/11/d3-and-react.html</a>
+						</div>
+					</div>
 				</section>
 				<section>
 					<div class="flex-container">
