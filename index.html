@@ -65,11 +65,11 @@
 						<ul>
 							<li>links to both the slides and code for this presentation</li>
 							<li>follow along</li>
-							<li>look at it later</li>
-							<li>tell you a story</li>
-							<li>a story that may seem familiar</li>
-							<li>about a javascript developer</li>
-							<li>very much like many of you in the audience...</li>
+							<li>or look at it later</li>
+							<li>Anyone use React here? How about D3? How about using them together?</li>
+							<li>I know a developer who is quite familiar with React, and has used D3, but just a little</li>
+							<li>This is a story of how he learned to use React and D3 togther</li>
+							<li>His story begins with his name...</li>
 						</ul>
 					</aside>
 				</section>
@@ -79,7 +79,7 @@
 					  <div class="flex-item"><p class='text'>This is James S. Developer</p></div>
 					</div>
 					<aside class="notes">
-						<p>This is James, and he is the protagonist of our story...</p>
+						<p>This is James, our javascript developer, and the protagonist of our story...</p>
 					</aside>
 				</section>
 				<section>
@@ -88,19 +88,24 @@
 					  <div class="flex-item"><img src='images/bob-happy.png'/></div>
 					</div>
 					<aside class="notes">
-						<p>...and this is James' client, Bob, a successful business owner, that "needs" a flashy site (of course!)</p>
+						<p>...and this is James' client, Bob, a successful business owner.  Bob, like many clients, thinks he "needs" a flashy site for his business</p>
 					</aside>
 				</section>
 				<section>
 					<div class="flex-container">
 					  <div class="flex-item">
-					  <p>James is making a React app for Bob...</p>
+					  <p>James is making Bob a site for his business, using React...</p>
+					  <p>(James <3 React!)</p>
 					  </div>
 					  <div class="flex-item">
 					  </div>
 				  </div>
 					<aside class="notes">
-						<p>...and this react app is to show off Bob's company, and how awesome his sales are!</p>
+						<ul>
+							<li>...James is the lucky developer making Bob's site;</li>
+							<li>he is using react to make it</li>
+							<li>the site is to show off Bob's company, and how awesome his sales are!</li>
+						</ul>
 					</aside>
 				</section>
 				<section>
@@ -157,7 +162,7 @@
 								<li>analyzes the problem</li>
 								<li>and breaks it down into pieces</li>
 							</ul>
-							<li>First he starts the questions he has...</li>
+							<li>First he starts with the questions he has...</li>
 						</ul>
 					</aside>
 				</section>
@@ -174,7 +179,7 @@
 						</div>
 					</div>
 					<aside class="notes">
-						<p>Having asked himself these questions, James decides to start at the beginning, with...</p>
+						<p>Having asked himself these questions, James decides to start at the beginning, with Step 1!</p>
 					</aside>
 				</section>
 				<section>
@@ -184,7 +189,7 @@
 						</div>
 					</div>
 					<aside class="notes">
-						<p>Always start from where you are!</p>
+						<p>I always say, always start from where you are!</p>
 					</aside>
 				</section>
 				<section>
@@ -210,7 +215,10 @@
 						</div>
 					</div>
 					<aside class="notes">
-						<p>Let's look at the code for his base react components and app... (switch to code editor and app)</p>
+						<ul>
+							<li>Let's look at the code for his base react components and app... (switch to code editor and app)</li>
+							<li>and don't forget to ask questions!</li>
+						</ul>
 					</aside>
 				</section>
 				<section>
@@ -236,8 +244,11 @@
 						</div>
 					</div>
 					<aside class="notes">
-						<p><a href="file:///Users/daniellecloss/projects/react-d3-dom-code/standalone-d3/index.html">file:///Users/daniellecloss/projects/react-d3-dom-code/standalone-d3/index.html</a></p>
-						<p>Let's look at the example that James found online (switch to code editor and app)</p>
+						<ul>
+							<li><a href="file:///Users/daniellecloss/projects/react-d3-dom-code/standalone-d3/index.html">file:///Users/daniellecloss/projects/react-d3-dom-code/standalone-d3/index.html</a></li>
+							<li>Let's look at the example that James found online (switch to code editor and app)</li>
+							<li>and don't forget to ask questions!</li>
+						</ul>
 					</aside>
 				</section>
 				<section>
@@ -304,7 +315,10 @@
 						</div>
 					</div>
 					<aside class="notes">
-						<p>Let's take a look at the code that James came up with... (switch to code editor and app)</p>
+						<ul>
+							<li>Let's take a look at the code that James came up with... (switch to code editor and app)</li>
+							<li>and don't forget to ask questions!</li>
+						</ul>
 					</aside>
 				</section>
 				<section>
@@ -328,28 +342,12 @@
 					<div class="flex-container">
 						<div class="flex-item">
 							<h4>[STEP 4]: Make it interactive!</h4>
-							<p>Since James now has the visualization broken up into<br>React components, this part will be easy! Next he needs to:</p>
+							<p>Now that the visualization is broken up into components, this part is easy!</p>
 							<ul>
-								<li>Add external sales data</li>
-								<li>Use a user selected year for the data</li>
-								<li>Send the new data to the BarChart</li>
-							</ul>
-						</div>
-					</div>
-					<aside class="notes">
-						<p>Because of the work that James already did to put his D3 data visualiztion into react components, adding some interactivity is pretty easy</p>
-					</aside>
-				</section>
-				<section>
-					<div class="flex-container">
-						<div class="flex-item">
-							<p>Let's take a look at what James has come up with:</p>
-							<ul>
-								<li>New external json file with monthly sales data</li>
-								<li>App: add code to get the correct sales data, given the year</li>
-								<li>BarChart: add componentWillUpdate, to react to<br>the data prop being updated</li>
-								<li>React will update the bars in the BarChart</li>
-								<li>D3 can recalculate the scales for the axes</li>
+								<li>Add a new external json file with monthly sales data</li>
+								<li>Get the year from the user, for the sales data that the user wants to see</li>
+								<li>React automatically updates the bars in the chart, given the entered year</li>
+								<li>And D3 recalculates the axes' scales when the sales data is updated</li>
 							</ul>
 						</div>
 					</div>
@@ -370,7 +368,10 @@
 						</div>
 					</div>
 					<aside class="notes">
-						<p>Let's take a look at the code that James has come up with, to finish up the app, making it fully functional (switch to code editor and app)</p>
+						<ul>
+							<li>Let's take a look at the code that James has come up with, to finish up the app, making it fully functional (switch to code editor and app)</li>
+							<li>and don't forget to ask questions!</li>
+						</ul>
 					</aside>
 				</section>
 				<section>
@@ -522,7 +523,7 @@
 					</div>
 					<aside class="notes">
 						<p>Check out the code on github, pull it down, dig through it, compare the standalone D3 code with the React components.  Doing it this way really had an impact on me, even while I use D3 and React daily...</p>
-
+						<p>I also wanted to mention that these examples are using react version 15 and D3 version 4</p>
 						<p>I hope this has been useful for you, and thanks for listening!</p>
 
 						<p>Questions??</p>
