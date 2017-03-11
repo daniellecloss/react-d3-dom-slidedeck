@@ -40,8 +40,8 @@
 							<li>Hi, how is everyone?</li>
 							<li>I wanted to get an idea of who has worked with React before?</li>
 							<li>How about D3?</li>
-							<li>and how many of you have used both together?</li>
-							<li>alright, let's get started then!</li>
+							<li>and how many of you have used them both together?</li>
+							<li>alright, cool! let's get started then!</li>
 						</ul>
 					</aside>
 				</section>
@@ -57,8 +57,8 @@
 					<aside class="notes">
 						<ul>
 							<li>My name is Danielle</li>
-							<li>work at Arbor Networks on their network visibility product</li>
-							<li>been working as a UI Developer in Ann Arbor area for 8 years</li>
+							<li>I work at Arbor Networks on their network visibility product</li>
+							<li>I've been working as a UI Developer in the Ann Arbor area for about 8 years</li>
 						<ul>
 					</aside>
 				</section>
@@ -72,12 +72,8 @@
 					</div>
 					<aside class="notes">
 						<ul>
-							<li>links to both the slides and code for this presentation</li>
-							<li>follow along</li>
-							<li>or look at it later</li>
-							<li>I want to tell you a story, about a developer who is quite familiar with React, and has used D3, but just a little</li>
-							<li>This is a story of how he learned to use React and D3 togther</li>
-							<li>His story begins with his name...</li>
+							<li>Here are links to both the slides and the code for this presentation</li>
+							<li>follow along, or look at these later, if you like</li>
 						</ul>
 					</aside>
 				</section>
@@ -87,7 +83,11 @@
 					  <div class="flex-item"><p class='text'>This is James S. Developer</p></div>
 					</div>
 					<aside class="notes">
-						<p>This is James, our javascript developer, and the protagonist of our story...</p>
+						<ul>
+							<li>Tonight, I want to tell you a story, about a developer who is quite familiar with React, and has used D3, but just a little</li>
+							<li>This is a story of how he learned to use React and D3 togther</li>
+							<li>This is James, our javascript developer, and the protagonist of our story...</li>
+						</ul>
 					</aside>
 				</section>
 				<section>
@@ -96,13 +96,16 @@
 					  <div class="flex-item"><img src='images/bob-happy.png'/></div>
 					</div>
 					<aside class="notes">
-						<p>...and this is James' client, Bob, a successful business owner.  Bob, like many clients, thinks he "needs" a flashy site for his business</p>
+						<ul>
+							<li>...and this is James' client, Bob, a successful business owner.</li>
+							<li>Bob, like many clients, thinks he "needs" a flashy site for his business</li>
+						</ul>
 					</aside>
 				</section>
 				<section>
 					<div class="flex-container">
 					  <div class="flex-item">
-					  <p>James is making Bob a site for his business, using React...</p>
+					  <p>James is making Bob his "flashy" site, using React...</p>
 					  <p>(James <3 React!)</p>
 					  </div>
 					  <div class="flex-item">
@@ -110,9 +113,9 @@
 				  </div>
 					<aside class="notes">
 						<ul>
-							<li>...James is the lucky developer making Bob's site;</li>
-							<li>he is using react to make it</li>
-							<li>the site is to show off Bob's company, and how awesome his sales are!</li>
+							<li>James is using React to make Bob's website</li>
+							<li>James loves react :)</li>
+							<li>The site's purpose is to show off how great Bob's company sales are!</li>
 						</ul>
 					</aside>
 				</section>
@@ -127,10 +130,9 @@
 				  </div>
 					<aside class="notes">
 						<ul>
-							<li>To make the site more flashy, Bob wants a bar chart!</li>
-							<li>Showing his sales!</li>
+							<li>To make the site more flashy and awesome, Bob wants a bar chart showing his sales</li>
 							<li>and he wants it NOW!  (as many clients do!)</li>
-							<li>I believe many of you are familiar with this scenario...</li>
+							<li>I bet many of you have been in similar situations...</li>
 						</ul>
 					</aside>
 				</section>
@@ -146,10 +148,11 @@
 				  </div>
 					<aside class="notes">
 						<ul>
-							<li>James, being the good developer he is, tells Bob he will start on it right away</li>
-							<li>but this is new territory for James;</li>
-							<li>He has not done a data visualization in a react app before</li>
-							<li>he is not sure where to start...</li>
+							<li>James, being the good developer he is, tells Bob he will start on it right away!</li>
+							<li>He can use D3 the create the bar chart!</li>
+							<li>But this is new territory for James;</li>
+							<li>He has not used D3 inside of React before</li>
+							<li>He is not sure where to start...</li>
 						</ul>
 					</aside>
 				</section>
@@ -168,7 +171,7 @@
 							<li>But, again, being the good developer that he is, he:</li>
 							<ul>
 								<li>analyzes the problem</li>
-								<li>and breaks it down into pieces</li>
+								<li>and breaks it down into "bite-sized" pieces</li>
 							</ul>
 							<li>First he starts with the questions he has...</li>
 						</ul>
@@ -187,6 +190,7 @@
 						</div>
 					</div>
 					<aside class="notes">
+						<p>(read questions)</p>
 						<p>Having asked himself these questions, James decides to start at the beginning, with Step 1!</p>
 					</aside>
 				</section>
@@ -197,7 +201,10 @@
 						</div>
 					</div>
 					<aside class="notes">
-						<p>I always say, always start from where you are!</p>
+						<ul>
+							<li>Step 1 - review your current app</li>
+							<li>I always say: start from where you are!</li>
+						</ul>
 					</aside>
 				</section>
 				<section>
@@ -208,10 +215,10 @@
 					</div>
 					<aside class="notes">
 						<ul>
-							<li>this is what his current app structure looks like</li>
-							<li>The app has a starting place, the App component</li>
-							<li>and an InputForm, where the user can enter a year for the sales data he wants to see</li>
-							<li>That should help him when he starts adding in the data viz code for the bar chart...</li>
+							<li>This is what James' current app structure looks like</li>
+							<li>The code has a starting place, the App component...</li>
+							<li>...and an InputForm component, where the user can enter a year for the sales data he wants to see</li>
+							<li>Having the user-selected year available should help him when he adds the sales data and the D3 code for the bar chart...</li>
 						</ul>
 					</aside>
 				</section>
@@ -225,6 +232,8 @@
 					<aside class="notes">
 						<ul>
 							<li>Let's look at the code for his base react components and app... (switch to code editor and app)</li>
+							<li>App component</li>
+							<li>InputForm component</li>
 							<li>and don't forget to ask questions!</li>
 						</ul>
 					</aside>
@@ -238,9 +247,11 @@
 					</div>
 					<aside class="notes">
 						<ul>
-							<li>James, like any good developer, hits the interwebs</li>
-							<li>looks around to find an example of a D3 bar chart</li>
-							<li>to use as a source of the data viz code</li>
+							<li>For step 2 - James, like any good developer, hits the interwebs</li>
+							<li>and looks around to find an example of a D3 bar chart</li>
+							<li>He can use this code as a source of the D3 code that he wants to pull into his React app</li>
+							<li>At this point, you could also make your own standalone D3 visualization, and use that code</li>
+							<li>I'm sure that you know you are not limited to what is already available on the internet :)</li>
 						</ul>
 					</aside>
 				</section>
@@ -273,10 +284,10 @@
 					</div>
 					<aside class="notes">
 						<ul>
-							<li>James then looks at this D3 code</li>
-							<li>mentally separates it into components</li>
-							<li>This is a "react-y" way of looking at code</li>
-							<li>this will help James to move the D3 code into React components</li>
+							<li>James looks at this D3 code</li>
+							<li>and mentally separates it into components</li>
+							<li>This is a "React-y" way of looking at code</li>
+							<li>This planning will help James move the D3 code into React components</li>
 						</ul>
 					</aside>
 				</section>
@@ -286,7 +297,7 @@
 							<p>While James works to move these D3 components<br>into his React app, he thinks about:</p>
 							<ul>
 								<li>What should D3 handle, and what should React handle?</li>
-								<li>What type of data flow should the I have?</li>
+								<li>What type of data flow should my app have?</li>
 								<li>How should I break up the data visualization into components?</li>
 								<li>How should I encapsulate these components?</li>
 							</ul>
@@ -294,9 +305,11 @@
 					</div>
 					<aside class="notes">
 						<ul>
-							<li>These concepts are not specific to react code</li>
-							<li>they are all things you would need to think about when building out any kind of coded component system</li>
-							<li>this list should already look familiar to you</li>
+							<li>While working, James thinks about...</li>
+							<li>(read questions)</li>
+							<li>These concepts are not specific to React code</li>
+							<li>These are all things you would need to think about when building any kind of coded component system</li>
+							<li>These questions are probably questions you have asked yourself while building an application</li>
 						</ul>
 					</aside>
 				</section>
@@ -308,10 +321,11 @@
 					</div>
 					<aside class="notes">
 						<ul>
-							<li>Here is the new app layout, with the additional components for the data visualization</li>
-							<li>the dashed line surrounds the original app components</li>
-							<li>we now have a BarChart components, made of an 'included' rectangles subcomponent</li>
-							<li>and a ChartAxis component</li>
+							<li>Here is the new app structure, with the additional components for the data visualization</li>
+							<li>The dashed line surrounds the original app components</li>
+							<li>We now have a BarChart component, made of an 'included' rectangles subcomponent</li>
+							<li>We also have a ChartAxis component</li>
+							<li>And the App component handles the communication between the InputForm and BarChart components</li>
 						</ul>
 					</aside>
 				</section>
@@ -341,7 +355,7 @@
 					<aside class="notes">
 						<ul>
 							<li>James is almost done!</li>
-							<li>He has a working data visualization</li>
+							<li>He has a working bar chart, with static sales data, added to his app, in new React components!</li>
 							<li>but he is still missing a key piece...</li>
 						</ul>
 					</aside>
@@ -361,7 +375,10 @@
 					</div>
 					<aside class="notes">
 						<ul>
-							<li>React can hang onto the data and app state</li>
+							<li>Step 4 - making it interactive</li>
+							<li>What does James need to do next?</li>
+							<li>Let React and D3 do what each does best!</li>
+							<li>React can hang onto the data and app state (in other words, what year the user has entered, and the corresponding sales data)</li>
 							<li>When the React BarChart component responds to the new data that is passed in</li>
 							<li>React can update the bar chart data and D3 can calculate the correct scale for the axis</li>
 						</ul>
@@ -394,7 +411,11 @@
 						</div>
 					</div>
 					<aside class="notes">
-						<p>James is rather proud of his accomplishment at this point, and feels that this is a good base for his code, so that he can extend his app in the future...</p>
+						<ul>
+							<li>James now has an interactive app!</li>
+							<li>He is rather proud of his accomplishment at this point</li>
+							<li>and he feels that this is a good base for his code, so that he can extend his app in the future...</li>
+						</ul>
 					</aside>
 				</section>
 				<section>
@@ -407,7 +428,7 @@
 					  </div>
 					</div>
 					<aside class="notes">
-						<p>Let's take a look at what James has learned from this experience...</p>
+						<p>Let's take a look at what James has learned from this experience with using React with D3...</p>
 					</aside>
 				</section>
 				<section>
@@ -423,7 +444,11 @@
 						</div>
 					</div>
 					<aside class="notes">
-						<p>It's really as simple as this to get started...</p>
+						<ul>
+							<li>How would you integrate D3 into a React app?</li>
+							<li>(read steps from slide)</li>
+							<li>It's really as simple as this to get started...</li>
+						</ul>
 					</aside>
 				</section>
 				<section>
@@ -434,7 +459,10 @@
 						</div>
 					</div>
 					<aside class="notes">
-						<p>The idea of 'clear separation' is really a practice synonymous with good software development...</p>
+						<ul>
+							<li>In terms of DOM manipulation, React and D3 could both select elements, and apply attribute or property updates to them, but obviously when used together, only one of them should be doing the job!</li>
+							<li>The idea of 'clear separation' is really a practice synonymous with good software development...</li>
+						</ul>
 					</aside>
 				</section>
 				<section>
@@ -445,7 +473,10 @@
 						</div>
 					</div>
 					<aside class="notes">
-						<p>This line may not always be clear, but the important thing to remember is, don't have both D3 and React trying to manipulate the same elements...</p>
+						<ul>
+							<li>When drawing the line between what React handles and D3 handles, the general guidelines are to let React handle most things, except the heavy data vizualization calculations...</li>
+							<li>This line may not always be clear, but the important thing to remember is, don't have both D3 and React trying to manipulate the same elements at the same time...</li>
+						</ul>
 					</aside>
 				</section>
 				<section>
@@ -461,7 +492,11 @@
 						</div>
 					</div>
 					<aside class="notes">
-						<p>Like peanut butter and jelly, they go great together!</p>
+						<ul>
+						<li>These libraries can go well together, with some forethought;</li>
+						<li>Both have their own advantages, like React's virtual DOM, and D3's data visualization methods for calculations</li>
+						<li>Like peanut butter and jelly, they go great together!</li>
+						</ul>
 					</aside>
 				</section>
 				<section>
@@ -473,9 +508,9 @@
 					</div>
 					<aside class="notes">
 						<ul>
-							<li>I found this graphic while researching this talk, and thought it summed up the overlap in DOM manipulation between React and D3 nicely!</li>
-							<li>this graphic also gave a nice list of what React does well</li>
-							<li>and what D3 does well</li>
+							<li>I found this graphic while researching this talk</li>
+							<li>I thought it was a nice visual to describe that React and D3 overlap when it comes to DOM manipulation</li>
+							<li>And, this graphic also gave a nice list of what React and D3 do well</li>
 						</ul>
 					</aside>
 				</section>
@@ -492,7 +527,10 @@
 					  </div>
 					</div>
 					<aside class="notes">
-						<p>Bob likes it!  So much so...</p>
+						<ul>
+							<li>James shows Bob the final version, and Bob loves it!</li>
+							<li>Bob sees future possibilities! And, then he asks...</li>
+						</ul>
 					</aside>
 				</section>
 				<section>
@@ -502,7 +540,9 @@
 						</div>
 					</div>
 					<aside class="notes">
-						<p>...that he wants another new chart in his site!!!</p>
+						<ul>
+							<li>...if James can add another new chart in his site!!!</li>
+						</ul>
 					</aside>
 				</section>
 				<section>
@@ -515,7 +555,10 @@
 					  </div>
 				  </div>
 				  <aside class="notes">
-				  	<p>Poor james!  I'm sure you can probably relate to having had a similar experience :)</p>
+				  	<ul>
+				  		<li>Poor James!  But, I'm sure you can relate!</li>
+				  		<li>The good news is, now that he knows how to integrate React and D3, making a pie chart will be a piece of cake, er, pie! :)</li>
+			  		</ul>
 				  </aside>
 				</section>
 				<section>
@@ -530,11 +573,14 @@
 						</div>
 					</div>
 					<aside class="notes">
-						<p>Check out the code on github, pull it down, dig through it, compare the standalone D3 code with the React components.  Doing it this way really had an impact on me, even while I use D3 and React daily...</p>
-						<p>I also wanted to mention that these examples are using react version 15 and D3 version 4</p>
-						<p>I hope this has been useful for you, and thanks for listening!</p>
-
-						<p>Questions??</p>
+						<ul>
+							<li>You can check out the code on github, clone the repo, run it, dig through it, compare the standalone D3 code with the React component code.</li>
+							<li>While I was working on the code for this presentation, this is what I was doing.</li>
+							<li>I think looking at the code by comparing and contrasting these 2 implementations had an impact on how I saw these two libraries working together, even though I already use D3 and React together pretty regularly...</li>
+							<li>And I did get some of this code from examples online, like any good developer :)</li>
+							<li>I also wanted to mention that these examples are using React version 15 and D3 version 4</li>
+							<li>I hope this has been useful for you, and thanks for listening!</li>
+							<li>Questions??</li>
 					</aside>
 				</section>
 			</div>
